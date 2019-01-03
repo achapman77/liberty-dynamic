@@ -1,0 +1,5 @@
+img/flashbang-imgs/** filter=lfs diff=lfs merge=lfs -text
+img/team/** filter=lfs diff=lfs merge=lfs -text
+bg-callout.png filter=lfs diff=lfs merge=lfs -text
+bg-masthead.jpg filter=lfs diff=lfs merge=lfs -text
+bg-footer.jpg filter=lfs diff=lfs merge=lfs -text
