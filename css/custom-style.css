@@ -16,6 +16,9 @@
 .mr-6 {
     margin-right: 2rem;
 }
+.hide-me {
+    display: none;
+}
 
 #horizontal-logo {
     max-width: 40rem;
