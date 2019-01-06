@@ -51,20 +51,20 @@ $(function () {
         
 
         if ($(this).find(`i`).hasClass(`fa-minus-square`)) {
-            $(".bio-container").stop(true, true).fadeOut({ duration: fadeDuration, queue: false }).slideUp(slideDuration).removeClass(`open`);
+            $("#bio-container").stop(true, true).fadeOut({ duration: fadeDuration, queue: false }).slideUp(slideDuration).removeClass(`open`);
             $(this).find(`i`).removeClass(`fa-minus-square`).addClass(`fa-plus-square`);
             
-        } else if ($(this).find(`i`).hasClass(`fa-plus-square`) && ($(".bio-container").hasClass(`open`))) { 
+        } else if ($(this).find(`i`).hasClass(`fa-plus-square`) && ($("#bio-container").hasClass(`open`))) { 
             $(this).siblings().find(`i`).removeClass(`fa-minus-square`).addClass(`fa-plus-square`)
             $(this).find(`i`).removeClass(`fa-plus-square`).addClass(`fa-minus-square`);
-            $(".bio-container").empty().append(bioPicker(name)).css(`display`, `none`);
-            $(".bio-container").stop(true, true).fadeIn({duration: fadeDuration, queue: false})
+            $("#bio-container").empty().append(bioPicker(name)).css(`display`, `none`);
+            $("#bio-container").stop(true, true).fadeIn({duration: fadeDuration, queue: false})
         }else {
             
             $(this).siblings().find(`i`).removeClass(`fa-minus-square`).addClass(`fa-plus-square`)
             $(this).find(`i`).removeClass(`fa-plus-square`).addClass(`fa-minus-square`);
-            $(".bio-container").empty().addClass(`open`).append(bioPicker(name));
-            $(".bio-container").stop(true, true).fadeIn({duration: fadeDuration, queue: false}).css(`display`, `none`).slideDown(slideDuration);
+            $("#bio-container").empty().addClass(`open`).append(bioPicker(name));
+            $("#bio-container").stop(true, true).fadeIn({duration: fadeDuration, queue: false}).css(`display`, `none`).slideDown(slideDuration);
             
         }
     })
