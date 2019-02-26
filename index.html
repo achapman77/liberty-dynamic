@@ -2,44 +2,11 @@
 <html lang="en">
 
 <head>
-  <!--Redirect to https-->
-  <script>
-      if (window.location.protocol == "http:") {
-        console.log("You are not connected with a secure connection.")
-        console.log("Reloading the page to a Secure Connection...")
-        window.location = document.URL.replace("http://", "https://");
-      }
-  
-      if (window.location.protocol == "https:") {
-        console.log("You are connected with a secure connection.")
-      }
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130011048-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-130011048-1');
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M7TF7M9');
-  </script>
-    <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Liberty Dynamic</title>
-
   <!--favicon-->
   <link rel="apple-touch-icon" sizes="57x57" href="img/icons/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicons/apple-icon-60x60.png">
@@ -60,9 +27,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Custom fonts for this theme -->
-  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!-- Plugin styles -->
@@ -906,68 +871,7 @@
   <!--Custom Scripts by Adam-->
   <script src="js/custom.js"></script>
 
-  <!--CleverFunnel Campaign Tracker-->
-  <script type="text/javascript">
-    // Set to false if opt-in required
-    var trackByDefault = true;
-    
-    function acEnableTracking() {
-      var expiration = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 30);
-      document.cookie = "ac_enable_tracking=1; expires= " + expiration + "; path=/";
-      acTrackVisit();
-    }
-    
-    function acTrackVisit() {
-      var trackcmp_email = '';
-      var trackcmp = document.createElement("script");
-      trackcmp.async = true;
-      trackcmp.type = 'text/javascript';
-      trackcmp.src = '//trackcmp.net/visit?actid=89633614&e='+encodeURIComponent(trackcmp_email)+'&r='+encodeURIComponent(document.referrer)+'&u='+encodeURIComponent(window.location.href);
-      var trackcmp_s = document.getElementsByTagName("script");
-      if (trackcmp_s.length) {
-        trackcmp_s[0].parentNode.appendChild(trackcmp);
-      } else {
-        var trackcmp_h = document.getElementsByTagName("head");
-        trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
-      }
-    }
-    
-    if (trackByDefault || /(^|; )ac_enable_tracking=([^;]+)/.test(document.cookie)) {
-      acEnableTracking();
-    }
-  </script>
-  <!-- Hotjar Tracking Code for https://libertydynamic.com/ -->
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1172387,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-
-  <script type="text/javascript">
-    adroll_adv_id = "VKJ7J4ZLVRGLRIQK2BEVR3";
-    adroll_pix_id = "RQ2XV65TSBGXJDJWJ3DVVV";
-
-    (function () {
-        var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
-            var scr = document.createElement("script");
-            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-            scr.setAttribute('async', 'true');
-            scr.type = "text/javascript";
-            scr.src = host + "/j/roundtrip.js";
-            ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-        };
-        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
-        else {window.attachEvent('onload', _onload)}
-    }());
-  </script>
+  
 </body>
 
 </html>
