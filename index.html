@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+  <!--Redirect to https-->
+  <script>
+      if (window.location.protocol == "http:") {
+        console.log("You are not connected with a secure connection.")
+        console.log("Reloading the page to a Secure Connection...")
+        window.location = document.URL.replace("http://", "https://");
+      }
+  
+      if (window.location.protocol == "https:") {
+        console.log("You are connected with a secure connection.")
+      }
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130011048-1"></script>
   <script>
@@ -47,11 +60,9 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Custom fonts for this theme -->
-  <!-- <link href="fonts/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> -->
-
+  
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!-- Plugin styles -->
@@ -87,21 +98,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">The Problem
+            </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#product">The Solution
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#use-cases">Use Cases
+            </a>
+          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Product
+              About Product
             </a>
             <div class="dropdown-menu shadow border-0" aria-labelledby="portfolioDropdown">
-              <a class="dropdown-item js-scroll-trigger" href="#product">Design</a>
+              <a class="dropdown-item js-scroll-trigger" href="#about">The Problem</a>
+              <a class="dropdown-item js-scroll-trigger" href="#product">The Solution</a>
               <a class="dropdown-item js-scroll-trigger" href="#use-cases">Use Cases</a>
+              <a class="dropdown-item js-scroll-trigger" href="#video-carousel">Video Footage</a>
             </div>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Videos</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -292,6 +318,316 @@
         
       </div><!--End Container-->
     </section>
+
+    <!-- * * * * * * * * * * * * * * * * * -->
+  <!-- * Portfolio Section - Carousel * -->
+  <!--See portfolio-carousel.html file-->
+  <!-- * * * * * * * * * * * * * * * * * -->
+  <section id="video-carousel">
+    <div class="carousel-portfolio">
+      <!-- Portfolio Carousel - Item 0 -->
+      <div class="carousel-portfolio-item first-item bg-dark text-center text-lg-left">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-xl-8">
+              <div class="video-container mb-3 mb-lg-0">
+                    <!-- Carousel Image -->
+                    <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429707?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+                    <a href="https://www.militarytimes.com/video/2019/01/22/programmable-flashbang-grenade-debuts-at-shot-show/" target="_blank"><img class="img-fluid" src="img/news/militarytimes.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <h3 class="text-uppercase m-0">Military Times Interview</h3>
+              <p class="mb-0 text-center subtitle">2019 Shot Show </p>
+              <hr class="primary small ml-lg-0 mb-4">
+              <p><a href="https://www.militarytimes.com/news/your-army/2019/01/22/this-flash-bang-grenade-has-safety-tactical-and-timing-features-not-available-in-the-military-today/" target="_blank">Military Times Article by Todd South</a></p>
+              <a href="https://www.militarytimes.com/news/your-army/2019/01/22/this-flash-bang-grenade-has-safety-tactical-and-timing-features-not-available-in-the-military-today/" target="_blank">
+                <p class="text-white">This Flash Bang Grenade has Safety, Tactical, and Timing Features Not Available in the Military Today</p>
+              </a>
+              <!-- <a data-toggle="modal" data-target="#portfolio-modal-1" href="javascript:;" class="btn btn-outline-light">View Details
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Carousel - Item 1 -->
+      <div class="carousel-portfolio-item first-item bg-dark text-center text-lg-left">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-xl-8">
+              <div class="video-container mb-3 mb-lg-0">
+                    <!-- Carousel Image -->
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429707?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <!-- <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt=""> -->
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <h3 class="text-uppercase m-0">Fuel-Air Event</h3>
+              <p class="mb-0 text-center subtitle">3D Render <a href="https://www.snowypeaktv.com/">by SNOWY PEAK TV</a></p>
+              <hr class="primary small ml-lg-0 mb-4">
+              <!-- <a data-toggle="modal" data-target="#portfolio-modal-1" href="javascript:;" class="btn btn-outline-light">View Details
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Carousel - Item 2 -->
+      <div class="carousel-portfolio-item second-item bg-dark text-center text-lg-left">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-xl-8">
+              <div class="video-container mb-3 mb-lg-0">
+                <!-- Carousel Image -->
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429265?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <h3 class="text-uppercase m-0">Fuel-Air Event</h3>
+              <p class="mb-0 text-center subtitle">Live Test</p>
+              <hr class="primary small ml-lg-0 mb-4">
+              <!-- <a data-toggle="modal" data-target="#portfolio-modal-2" href="javascript:;" class="btn btn-outline-light">View Details
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Carousel - Item 3 -->
+      <div class="carousel-portfolio-item third-item bg-dark text-center text-lg-left">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-xl-8">
+                <div class="video-container mb-3 mb-lg-0">
+                  <!-- Carousel Image -->
+                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429687?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                  <!-- <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt=""> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <h3 class="text-uppercase m-0">Reload Mechanics</h3>
+              <p class="mb-0 text-center subtitle">3D Render <a href="https://www.snowypeaktv.com/">by SNOWY PEAK TV</a></p>
+              <hr class="primary small ml-lg-0 mb-4">
+              <!-- <a data-toggle="modal" data-target="#portfolio-modal-3" href="javascript:;" class="btn btn-outline-light">View Details
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Carousel - Item 4 -->
+      <div class="carousel-portfolio-item fourth-item bg-dark text-center text-lg-left">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-xl-8">
+              <div class="video-container mb-3 mb-lg-0">
+                <!-- Carousel Image -->
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429396?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <h3 class=" m-0">sUAS DEPLOYMENT</h3>
+              <p class="mb-0 text-center subtitle">Live Test</p>
+              <hr class="primary small ml-lg-0 mb-4">
+              <!-- <a data-toggle="modal" data-target="#portfolio-modal-4" href="javascript:;" class="btn btn-outline-light">View Details
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modal - 1 -->
+<div class="modal fade portfolio-modal" id="portfolio-modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 mx-auto">
+                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
+                <hr class="primary small">
+                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
+                <div class="device-wrapper my-5">
+                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
+                    <div class="screen">
+                      <!-- Screen Image -->
+                      <div align="center" class="embed-responsive embed-responsive-16by9">
+                        <video autoplay loop  controls class="embed-responsive-item">
+                            <source src="./video/3D-flashbang-airburst-V1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <!-- <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt=""> -->
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled mb-5">
+                  <li class="list-unstyled-item">
+                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-light" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal - 2 -->
+  <div class="modal fade portfolio-modal" id="portfolio-modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 mx-auto">
+                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
+                <hr class="primary small">
+                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
+                <div class="device-wrapper my-5">
+                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
+                    <div class="screen">
+                      <!-- Screen Image -->
+                      <img class="img-fluid" src="img/portfolio/carousel/item-2-img.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled mb-5">
+                  <li class="list-unstyled-item">
+                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-light" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal - 3 -->
+  <div class="modal fade portfolio-modal" id="portfolio-modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 mx-auto">
+                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
+                <hr class="primary small">
+                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
+                <div class="device-wrapper my-5">
+                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
+                    <div class="screen">
+                      <!-- Screen Image -->
+                      <img class="img-fluid" src="img/portfolio/carousel/item-3-img.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled mb-5">
+                  <li class="list-unstyled-item">
+                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-light" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal - 4 -->
+  <div class="modal fade portfolio-modal" id="portfolio-modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 mx-auto">
+                <h3 class="text-uppercase portfolio-modal-heading">Project Name</h3>
+                <hr class="primary small">
+                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, debitis, voluptatum adipisci voluptate nulla quibusdam deleniti explicabo quo, maxime voluptatibus totam laboriosam at impedit est. Labore repudiandae saepe quia.</p>
+                <div class="device-wrapper my-5">
+                  <div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
+                    <div class="screen">
+                      <!-- Screen Image -->
+                      <img class="img-fluid" src="img/portfolio/carousel/item-4-img.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled mb-5">
+                  <li class="list-unstyled-item">
+                    Client: <strong><a class="text-white" href="#">Start Bootstrap</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Service: <strong><a class="text-white" href="#">Web Development</a></strong>
+                  </li>
+                  <li class="list-unstyled-item">
+                    Date: <strong><a class="text-white" href="#">January 2019</a></strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-light" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- * * * * * * * * * * * * * * -->
   <!-- * Team Section - Carousel * -->
   <!-- * * * * * * * * * * * * * * -->
@@ -299,17 +635,18 @@
   <section class="page-section text-center bg-light" id="team">
     <div class="container">
       <h2 class="page-section-heading text-uppercase text-center">Our Team</h2>
-      <p class="lead m-0 text-center">We are an engineering and ex-military team</p>
+      <p class="lead m-0 text-center">We are an engineering and military veteran team</p>
       <p class="lead m-0 text-center">with a passion for improving the safety and functionality of crucial gear.</p>
       <hr class="primary small mb-5">
       <div class="carousel-team">
+        
         <!-- Team Carousel - Item 1 -->
         <div class="carousel-team-item">
           <div class="carousel-team-item-content d-flex align-items-end  justify-content-center">
             <div class="text-center ">
               <div class="h4 text-uppercase">John Chapman</div>
               <hr class="primary my-2">
-              <button id="john-bio" class="bio-btn">
+              <button id="john-bio" class="bio-btn" data-name="john-bio">
                   <div class="bio-btn-text">Co-Founder & CEO</div>
                   <i class="far fa-plus-square bio-btn-icon"></i>
               </button>
@@ -318,15 +655,15 @@
           <div class="overlay overlay-switch"></div>
           <!-- Team Member Image -->
           <img class="img-fluid" src="img/team/john-chapman.jpg" alt="">
-
         </div>
+        
         <!-- Team Carousel - Item 2 -->
         <div class="carousel-team-item">
           <div class="carousel-team-item-content d-flex align-items-end justify-content-center">
             <div class="text-center">
               <div class="h4 text-uppercase">Marcus Caldwell</div>
               <hr class="primary my-2">
-              <button id="marc-bio" class="bio-btn">
+              <button id="marc-bio" class="bio-btn" data-name="marc-bio">
                   <div class="bio-btn-text">Co-Founder & CTO</div>
                   <i class="far fa-plus-square bio-btn-icon"></i>
               </button>
@@ -336,13 +673,15 @@
           <!-- Team Member Image -->
           <img class="img-fluid" src="img/team/marcus-caldwell.jpeg" alt="Marcus Caldwell">
         </div>
-        <!-- Team Carousel - Item 3 -->
+        
+        
+        <!-- Team Carousel - Item 4 -->
         <div class="carousel-team-item">
           <div class="carousel-team-item-content d-flex align-items-end justify-content-center">
             <div class="text-center">
-              <div class="h4 text-uppercase">Nathan Waller</div>
+              <div class="h4 text-uppercase">Jarrett Hill</div>
               <hr class="primary my-2">
-              <button id="nathan-bio" class="bio-btn">
+              <button id="jarrett-bio" class="bio-btn" data-name="jarrett-bio">
                   <div class="bio-btn-text">Technical Advisor</div>
                   <i class="far fa-plus-square bio-btn-icon"></i>
               </button>
@@ -350,8 +689,26 @@
           </div>
           <div class="overlay"></div>
           <!-- Team Member Image -->
-          <img class="img-fluid" src="img/team/nathan-waller.jpeg" alt="Nathan Waller">
+          <img class="img-fluid" src="img/team/jarret-hill.jpg" alt="Jarrett Hill">
         </div>
+
+        <!-- Team Carousel - Item 5 -->
+        <div class="carousel-team-item">
+          <div class="carousel-team-item-content d-flex align-items-end justify-content-center">
+            <div class="text-center">
+              <div class="h4 text-uppercase">Christopher Ward</div>
+              <hr class="primary my-2">
+              <button id="christopher-bio" class="bio-btn" data-name="christopher-bio">
+                  <div class="bio-btn-text">Technical Advisor</div>
+                  <i class="far fa-plus-square bio-btn-icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="overlay"></div>
+          <!-- Team Member Image -->
+          <img class="img-fluid" src="img/team/christopher-ward.jpeg" alt="Christopher Ward">
+        </div>
+
       </div>
       <div id="bio-container">
       </div>
@@ -363,11 +720,7 @@
   <!-- * Callout Section - Full * -->
   <!-- * * * * * * * * * * * * * * -->
 
-  <!-- * * * * * * * * * * * * * * * * * -->
-  <!-- * Portfolio Section - Carousel * -->
-  <!--See portfolio-carousel.html file-->
-  <!-- * * * * * * * * * * * * * * * * * -->
-
+  
   <!-- * * * * * * * * * * * * * * * -->
   <!-- * Portfolio Section - Grid * -->
   <!-- * * * * * * * * * * * * * * * -->
@@ -526,6 +879,8 @@
         </a> -->
       </div>
       <div class="footer-copyright">
+        <a class="text-white-50" href="https://www.linkedin.com/in/adamachapman/">Website Design by A. Chapman</a>
+        <hr class="primary small mb-3">
         &copy; 2017 Liberty Dynamic, LLC
       </div>
     </div>
@@ -580,6 +935,38 @@
     if (trackByDefault || /(^|; )ac_enable_tracking=([^;]+)/.test(document.cookie)) {
       acEnableTracking();
     }
+  </script>
+  <!-- Hotjar Tracking Code for https://libertydynamic.com/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1172387,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <script type="text/javascript">
+    adroll_adv_id = "VKJ7J4ZLVRGLRIQK2BEVR3";
+    adroll_pix_id = "RQ2XV65TSBGXJDJWJ3DVVV";
+
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
   </script>
 </body>
 
