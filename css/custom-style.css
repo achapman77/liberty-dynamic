@@ -1,0 +1,300 @@
+
+.medium {
+    max-width: 50rem;
+}
+.mb-6 {
+    margin-bottom: 2rem;
+}
+.mb-7 {
+    margin-bottom: 3rem;
+}
+
+.ml-6 {
+    margin-left: 2rem;
+}
+
+.mr-6 {
+    margin-right: 2rem;
+}
+.hide-me {
+    display: none;
+}
+
+#horizontal-logo {
+    max-width: 40rem;
+}
+.btn-nav {
+    margin-top: 0.65rem;
+}
+.btn-red {
+    background-color: rgba(237, 71, 53, 0.335);
+    border: solid 1px #ED4635;
+    color: whitesmoke;
+}
+#navbar-main .nav-item .nav-link{
+    font-size: 1.25rem;
+}
+
+#navbar-main .nav-item .nav-link.active{
+    font-weight: bolder
+}
+
+.masthead .masthead-logo {
+    min-height: 20rem;
+    margin-top: -5rem;
+    /* margin-right: 3rem; */
+  }
+
+
+
+.masthead .masthead-subtitle {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 375px){
+    
+    .page-section-heading {
+        font-size: 2rem;
+    }
+
+}
+@media (min-width: 992px) {
+
+    .masthead .masthead-logo {
+        max-height: 27rem;
+        margin-top: 1rem;
+        /* transform: rotate(-25deg); */
+    }
+    .masthead .masthead-title {
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 0.15rem;
+    }
+    .masthead .masthead-subtitle {
+        font-size: 2rem;
+        letter-spacing: 0.15rem;
+    }
+    .subtitle{
+        text-align: left !important;
+    }
+    /* .bio-btn-text{
+        font-size: 1rem;
+    } */
+
+}
+
+@media(min-width: 1024px){
+    .masthead .masthead-subtitle {
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+    }
+    /* .bio-btn {
+        width: 280px;
+    } */
+    /* .bio-btn-text{
+        font-size: 1rem;
+    } */
+}
+
+@media (min-width: 1200px) {
+    .masthead .masthead-logo {
+       min-height: 30rem;
+        margin-top: 1rem;
+        /* transform: rotate(-25deg); */
+    }
+
+    /* .bio-btn {
+        width: 280px;
+        color: red;
+    } */
+
+    /* .bio-btn-text{
+        font-size: 1rem;
+    } */
+
+    /* .bio-btn-icon {
+        margin-left: 1rem;
+    } */
+    /* .carousel-team-item-content{
+        width: 100%
+    } */
+}
+
+@media (min-width: 1440px) {
+    .masthead .masthead-logo {
+       min-height: 25rem;
+        margin-top: 1rem;
+        /* transform: rotate(-25deg); */
+    }
+}
+
+@media (min-width: 1680px) {
+    .masthead .masthead-logo {
+       min-height: 40rem;
+        margin-top: 1rem;
+        /* transform: rotate(-25deg); */
+    }
+}
+
+.icon {
+    max-width: 5rem;
+    margin-bottom: 0.65rem;
+    /* -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; */
+}
+#product {
+    padding-bottom: 3rem;
+}
+
+#use-cases {
+    padding-top: 5rem;
+}
+
+
+.btn-white{
+    background-color: rgba(255, 255, 255, 0.2)
+}
+/* .fb-img {
+    
+    max-width: 25rem;
+} */
+
+.fb-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 13rem;
+}
+
+.fb-tech {
+    max-width: 80rem;
+}
+
+/* .img-fluid {
+    min-height: 340px;
+} */
+.carousel-team-item:hover {
+    cursor: pointer;
+}
+.bio-btn {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(251, 103, 103, 0.55); */
+    display: flex;
+    flex-direction: row;
+    font-size: 1.35rem;
+    justify-content: flex-end;
+    /* width: 340px; */
+    outline: none !important;
+    border: none;
+}
+
+.bio-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.bio-btn-icon {
+    margin-left: 3rem;
+}
+
+
+
+/* .overlay{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+} */
+
+/* .overlay:hover{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}  */
+
+.carousel-team-item {
+    position: relative;
+}
+
+
+.carousel-team-item-content {
+    color: rgba(255, 255, 255, 0.7) !important;
+    width: auto;
+}
+
+.carousel-team-item .overlay {
+    transition: background-color 1s;
+}
+
+.carousel-team-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.carousel-team-item .h4 {
+    transition: color 1s;
+}
+.carousel-team-item:hover .h4 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.carousel-team-item button {
+    transition: background-color 1s;
+}
+
+.carousel-team-item:hover button {
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.carousel-team-item hr {
+    transition: max-width 1s;
+}
+.carousel-team-item:hover hr {
+    max-width: 15rem !important;
+}
+
+.carousel-team-item button i {
+    transition: color 1s;
+}
+.carousel-team-item:hover button i {
+    color: #ED4635;
+}
+
+#bio-container {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.option-list-content ul,
+p {
+    text-align: left;
+}
+
+.option-list-content li {
+    margin-bottom: 1rem;
+}
+.option-img {
+    /* max-width: 15rem; */
+    max-height: 12rem;
+
+}
+
+.badge-img {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
