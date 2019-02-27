@@ -739,9 +739,10 @@
           <h2 class="page-section-heading text-uppercase text-center">Contact Us</h2>
           <!-- <p class="lead m-0 text-center">Let us know about your next project and we will let you know what we can do to help you!</p> -->
           <hr class="primary small mb-5">
-          <form name="sentMessage" action="https://libertydynamic.us7.list-manage.com/subscribe/post" method="POST" id="contactForm" novalidate="novalidate">
-            <input type="hidden" name="u" value="acca693b81cf7a5048fe49da0">
-            <input type="hidden" name="id" value="7bf22bff84">
+          <form name="contactForm" id="contactForm" novalidate="novalidate" netlify data-netlify="true" netlify-honeypot="bot-field">
+            <div style="display:none;">
+              <input name="bot-field">
+            </div>
             <div class="row control-group">
               <div class="form-group col-12 floating-label-form-group controls">
                 <label>First Name</label>
