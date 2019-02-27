@@ -1,3 +1,7 @@
 tags.html
 policy.html
 .DS_Store
+LICENSE
+gulpfile.js
+package-lock.json
+package.json
