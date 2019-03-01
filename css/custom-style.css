@@ -135,6 +135,9 @@
     .lander {
         height: 26rem;
     }
+    .thankyou h2 {
+        margin-top: 5rem;
+    }
 
 }
 
@@ -175,6 +178,9 @@
 @media (min-width: 768px){
     .masthead-full{
         height: 42rem;
+    }
+    .thankyou h2 {
+        margin-top: 5rem;
     }
 }
 @media (min-width: 992px) {
@@ -255,9 +261,9 @@
     .carousel-portfolio-item {
         height: calc(100vh - 175px) !important;
     }
-    /* .lander {
-        height: 80%;
-    } */
+    .thankyou h2 {
+        margin-top: 3rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -476,4 +482,9 @@ p {
     align-content: center;
     align-items: center;
     color: white;
+}
+
+.thankyou .fa-calendar-alt {
+    margin-right: 0.7rem;
+    font-size: 1.45rem;
 }
