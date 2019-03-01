@@ -6,10 +6,31 @@
 .w100 {
     width: 100%;
 }
-
+.pxt-3{
+    padding-top: 3rem;
+}
+.pxt-5{
+    padding-top: 5rem;
+}
+.pxt-7{
+    padding-top: 7rem;
+}
 .mt-6 {
     margin-top: 2rem;
 }
+.mt-7 {
+    margin-top: 3rem;
+}
+.mt-8 {
+    margin-top: 4rem;
+}
+.mt-9 {
+    margin-top: 5rem;
+}
+.mt-10 {
+    margin-top: 6rem;
+}
+
 .mb-6 {
     margin-bottom: 2rem;
 }
@@ -57,18 +78,104 @@
     /* margin-right: 3rem; */
   }
 
-
-
 .masthead .masthead-subtitle {
     font-size: 1.25rem;
 }
 
-@media (min-width: 375px){
-    
-    .page-section-heading {
-        font-size: 2rem;
+#horizontal-logo {
+    margin-bottom: 1.25rem !important;
+}
+
+@media (min-width: 320px) {
+    .masthead-full {
+        padding: 1.5rem 0;
+        height: 30rem;
+    }
+    .embed-responsive{
+        /* width: 75%; */
+        margin: 0rem auto;
+    }
+    section {
+        padding-top: 2.25rem !important;
+    }
+    .page-section-heading{
+        font-size: 1.5rem;
+        margin-top: 0
+    }
+    .callout-text {
+        font-size: 1.2rem !important;
+        margin-top: 1rem;
     }
 
+    #video-carousel h3 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    .h4{
+        font-size: 1.2rem;
+    }
+
+    .bio-btn-text {
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.95rem;
+    }
+    .masthead-subtitle {
+        font-size: 0.75rem !important;
+    }
+    .lander {
+        height: 26rem;
+    }
+
+}
+
+@media (min-width: 375px){
+    .masthead-full{
+        height: 32rem;
+    }
+    .page-section-heading{
+        font-size: 1.5rem
+    }
+    .callout-text {
+        font-size: 1.25rem !important;
+        margin-top: 1rem;
+    }
+    .masthead-full {
+        padding: 1.5rem 0;
+    }
+    .h4{
+        font-size: 1.75rem;
+    }
+
+    .bio-btn-text {
+        font-size: 1.35rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .lander {
+        height: 31rem;
+    }
+
+}
+@media (min-width: 568px){
+    .masthead-full{
+        height: 37rem;
+    }
+}
+@media (min-width: 768px){
+    .masthead-full{
+        height: 42rem;
+    }
 }
 @media (min-width: 992px) {
 
@@ -96,55 +203,107 @@
 }
 
 @media(min-width: 1024px){
-    .masthead .masthead-subtitle {
+    section {
+        padding-top: 3.25rem !important;
+    }
+    .page-section-heading{
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    h3 {
         font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    .masthead-full{
+        height: 50rem;
+    }
+    .masthead .masthead-title {
+        font-size: 3rem;
+        line-height: 3rem;
         letter-spacing: 0.15rem;
     }
-    /* .bio-btn {
-        width: 280px;
-    } */
-    /* .bio-btn-text{
-        font-size: 1rem;
+
+    .masthead .masthead-subtitle {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.15rem;
+    }
+    .embed-responsive{
+        width: 82.5%;
+        margin: 3rem auto;
+    }
+
+    .callout-text {
+        font-size: 1.75rem !important;
+        margin-top: 1rem;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .h4{
+        font-size: 1.35rem;
+    }
+
+    .bio-btn-text {
+        font-size: 1.2rem;
+    }
+    
+    #video-carousel h3 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-portfolio-item {
+        height: calc(100vh - 175px) !important;
+    }
+    /* .lander {
+        height: 80%;
     } */
 }
 
 @media (min-width: 1200px) {
-    .masthead .masthead-logo {
+    /* .masthead .masthead-logo {
        min-height: 30rem;
         margin-top: 1rem;
-        /* transform: rotate(-25deg); */
-    }
-
-    /* .bio-btn {
-        width: 280px;
-        color: red;
-    } */
-
-    /* .bio-btn-text{
-        font-size: 1rem;
-    } */
-
-    /* .bio-btn-icon {
-        margin-left: 1rem;
-    } */
-    /* .carousel-team-item-content{
-        width: 100%
     } */
 }
 
 @media (min-width: 1440px) {
-    .masthead .masthead-logo {
+    section {
+        padding-top: 4.25rem !important;
+    }
+    .page-section-heading{
+        font-size: 2.5rem;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .masthead-full{
+        height: 55rem;
+    }
+    /* .masthead .masthead-logo {
        min-height: 25rem;
         margin-top: 1rem;
-        /* transform: rotate(-25deg); */
+    } */
+    .embed-responsive{
+        width: 85%;
+        margin: 3rem auto;
+    }
+    .carousel-portfolio-item {
+        height: calc(100vh - 100px) !important;
     }
 }
 
 @media (min-width: 1680px) {
+    .masthead-full{
+        height: 57rem;
+    }
     .masthead .masthead-logo {
        min-height: 40rem;
         margin-top: 1rem;
         /* transform: rotate(-25deg); */
+    }
+    .embed-responsive{
+        width: 100%;
+        margin: 0 auto;
     }
 }
 

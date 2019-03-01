@@ -45,6 +45,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(function() {
+        $('#landing').load('sections/landing-1.html');
         $('#about').load('sections/about.html');
         $('#callout').load('sections/callout.html');
         $('#product').load('sections/product.html');
@@ -94,22 +95,8 @@
     </div>
   </nav>
 
-  <header class="masthead masthead-full text-white">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col text-center">
-          <img class="masthead-logo mb-4 img-fluid" src="img/flashbang-imgs/fb-angle.png" alt="Liberty Dynamic">
-          <div class="masthead-title text-uppercase">The Safer Smarter<br> Enhanced Diversionary Device</div>
-          <hr class="primary medium">
-          <div class="masthead-subtitle">Superior Safety  | Superior Function  |  Superior Efficiency</div>
-        </div>
-      </div>
-    </div>
-    <div class="masthead-scroll">
-      <a href="#about" class="masthead-scroll-btn js-scroll-trigger">
-        <i class="fas fa-angle-down"></i>
-      </a>
-    </div>
+  <header class="masthead masthead-full text-white" id="landing">
+    <!-- Insert landing.html -->
   </header>
 
   <section class="page-section text-center" id="about">
@@ -132,16 +119,16 @@
       <div class="carousel-portfolio">
           <!-- Portfolio Carousel - Item 0 -->
           <div class="carousel-portfolio-item first-item bg-dark text-center text-lg-left">
-            <div class="container h-100">
-              <div class="row h-100 align-items-center">
-                <div class="col-lg-6 col-xl-8">
+            <div class="container ">
+              <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-8">
                   <div class="video-container mb-3 mb-lg-0">
                         <!-- Carousel Image -->
                         <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/312429707?color=ED4635&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
                         <a href="https://www.militarytimes.com/video/2019/01/22/programmable-flashbang-grenade-debuts-at-shot-show/" target="_blank"><img class="img-fluid" src="img/news/militarytimes.png" alt=""></a>
                   </div>
                 </div>
-                <div class="col-lg-6 col-xl-4">
+                <div class="col-lg-4 col-xl-4">
                   <h3 class="text-uppercase m-0">Military Times Interview</h3>
                   <p class="mb-0 text-center subtitle">2019 Shot Show </p>
                   <hr class="primary small ml-lg-0 mb-4">
