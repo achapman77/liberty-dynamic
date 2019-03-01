@@ -48,6 +48,16 @@
         $('#media-grid').load('media-grid.html');
     });
   </script>
+  <script>
+    $(function() {
+        $('#about').load('about.html');
+    });
+  </script>
+  <script>
+    $(function() {
+        $('#callout').load('callout.html');
+    });
+  </script>
 
 
 </head>
@@ -63,55 +73,37 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-main">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img class="navbar-brand-logo" src="img/logo-navbar.svg" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">The Problem
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#product">The Solution
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#use-cases">Use Cases
-            </a>
-          </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Product
-            </a>
-            <div class="dropdown-menu shadow border-0" aria-labelledby="portfolioDropdown">
-              <a class="dropdown-item js-scroll-trigger" href="#about">The Problem</a>
-              <a class="dropdown-item js-scroll-trigger" href="#product">The Solution</a>
-              <a class="dropdown-item js-scroll-trigger" href="#use-cases">Use Cases</a>
-              <a class="dropdown-item js-scroll-trigger" href="#video-carousel">Video Footage</a>
-            </div>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Videos</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-              <a class="btn btn-outline-light js-scroll-trigger btn-red btn-nav" href="#contact">REQUEST DEMO</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img class="navbar-brand-logo" src="img/logo-navbar.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Product
+                </a>
+                <div class="dropdown-menu shadow border-0" aria-labelledby="portfolioDropdown">
+                <a class="dropdown-item js-scroll-trigger" href="#about">The Problem</a>
+                <a class="dropdown-item js-scroll-trigger" href="#product">The Solution</a>
+                <a class="dropdown-item js-scroll-trigger" href="#use-cases">Use Cases</a>
+                <a class="dropdown-item js-scroll-trigger" href="#video-carousel">Video Footage</a>
+                </div>
             </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="http://themes.startbootstrap.com/vitality-v3.0.1/docs/index.html">Documentation</a>
-          </li> -->
-        </ul>
-      </div>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-light js-scroll-trigger btn-red btn-nav" href="#contact">REQUEST DEMO</a>
+                </li>
+            </ul>
+        </div>
     </div>
   </nav>
 
@@ -142,59 +134,12 @@
   <!-- * * * * * * * * * -->
 
   <section class="page-section text-center" id="about">
-    <div class="container-fluid">
-      <h1 class="page-section-heading text-uppercase">Existing Diversionary Devices (DDs) Are</h1>
-      <h1 class="page-section-heading text-uppercase">Dangerous & Costly</h1>
-      <hr class="primary small mb-6">
-      <div class="row">
-        <div class="col-md-4  px-md-5 mb-4 mb-xl-0 "> 
-          <i class="fas fa-user-injured fa-4x text-primary mb-3 "></i>
-          <i class="fas fa-skull-crossbones fa-4x text-primary mb-3"></i>
-          <h4 class="text-uppercase">Fragmentation</h4>
-          <p class="text-left">The blast event of existing DDs occurs at ground level.  As a result, the concusive force often initiates secondary fragmentation from ground debris that can cause severe injury.</p>
-        </div>
-        <div class="col-md-4 px-md-5 mb-4 mb-xl-0">
-          <i class="fab fa-gripfire fa-4x text-primary mb-3"></i>
-          <h4 class="text-uppercase">Fire & Smoke</h4>
-          <p class="text-left">The blast event of existing DDs uses flash-powder.  The heat may ignite fires and produces a residual smoke cloud that reduces operator visibility in critical situations.</p>
-        </div>
-        <div class="col-md-4  px-md-5 mb-4 mb-xl-0">
-          <i class="fas fa-exclamation-triangle fa-4x text-primary mb-3"></i>
-          <h4 class="text-uppercase">Unreliable Fuse</h4>
-          <p class="text-left">The pyrotechnic delay fuses of existing DDs have a wide delay deviation.  This forces operators to either wait longer than tactically advantageous to enter area or risk "eating the bang."</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 offset-md-2 px-md-5">
-          <i class="fas fa-gavel fa-4x text-primary mb-3"></i>
-          <h4 class="text-uppercase">Lawsuits</h4>
-          <p class="text-left">An individual lawsuit as a result of an improperly deployed DD causing injury or harm can easily exceed $1M.</p>
-          <p class="text-left">The use of DDs and their potential to harm is under increasing scrutiny from lawmakers and media.</p>
-        </div>
-        <div class="col-md-4 px-md-5">
-          <i class="fas fa-dollar-sign fa-4x text-primary mb-3"></i>
-          <h4 class="text-uppercase">Operating Costs</h4>
-          <p class="text-left">A single-use DD's per unit cost makes them expensive for effective training.</p>
-          <p class="text-left">Additionally, the classification of DDs as explosive devices, requires specialized and expensive shipping and storage solutions. </p>
-        </div>
-      </div>
-      
-    </div>
+    
   </section>
-  <section class="callout callout-full">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center">
-          <div class="col-xl-10 text-center">
-              <img id="horizontal-logo" src="img/logos/logo-horizontal-white.svg"/>
-              <h1 class="page-section-heading text-uppercase callout-text text-white">Has Engineered a Superior Diversionary Device</h1>
-              <h1 class="page-section-heading text-uppercase callout-text text-white"> in Every Way</h1>
-              <!-- <p class="lead m-0">Stress-tested to rigourous Military and Aerospace standards, ensuring outstanding reliability.</p> -->
-              <hr class="primary small mb-6">
-            <a class="btn btn-outline-light js-scroll-trigger btn-white" href="#product">How It Works</a>
-          </div>
-        </div>
-      </div>
-    </section>
+
+  <section class="callout callout-full" id="callout">
+    
+  </section>
 
   <section class="page-section text-center" id="product">
       <div class="container-fluid">
