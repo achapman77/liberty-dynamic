@@ -1,0 +1,12 @@
+.thankyou {
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.thankyou .fa-calendar-alt {
+    margin-right: 0.7rem;
+    font-size: 1.45rem;
+}
