@@ -87,6 +87,9 @@
 }
 
 @media (min-width: 320px) {
+    .calendly-badge-widget {
+        visibility: hidden;
+    }
     .masthead-full {
         padding: 1.5rem 0;
         height: 30rem;
@@ -107,9 +110,6 @@
         margin-top: 1rem;
     }
 
-    #video-carousel h3 {
-        font-size: 1rem;
-    }
     h3 {
         font-size: 1.2rem;
     }
@@ -142,8 +142,10 @@
 }
 
 @media (min-width: 375px){
+    
+
     .masthead-full{
-        height: 35rem;
+        height: 33rem;
     }
     .page-section-heading{
         font-size: 1.5rem
@@ -163,7 +165,7 @@
         font-size: 1.35rem;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .lander {
         height: 31rem;
@@ -171,19 +173,37 @@
 
 }
 @media (min-width: 568px){
+    h3 {
+        max-width: 72%;
+        margin: 0 auto;
+    }
     .masthead-full{
-        height: 37rem;
+        height: 33rem;
+    }
+
+    .embed-responsive{
+        width: 72.5%;
+        margin: 0.5rem auto;
     }
 }
 @media (min-width: 768px){
+    h3{
+        max-width: 60%;
+    }
     .masthead-full{
         height: 42rem;
     }
+
+    .embed-responsive{
+        width: 95%;
+        margin: 0.5rem auto;
+    }
+
     .thankyou h2 {
         margin-top: 5rem;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 900px) {
 
     .masthead .masthead-logo {
         max-height: 27rem;
@@ -208,7 +228,10 @@
 
 }
 
-@media(min-width: 1024px){
+@media (min-width: 1024px){
+    .calendly-badge-widget {
+        visibility: visible !important;
+    }
     section {
         padding-top: 3.25rem !important;
     }
@@ -218,6 +241,7 @@
     }
     h3 {
         font-size: 1.5rem;
+        max-width: 50%;
     }
     h4{
         font-size: 1.25rem;
@@ -237,7 +261,7 @@
     }
     .embed-responsive{
         width: 82.5%;
-        margin: 3rem auto;
+        margin: 2.5rem auto;
     }
 
     .callout-text {
@@ -254,15 +278,15 @@
         font-size: 1.2rem;
     }
     
-    #video-carousel h3 {
-        font-size: 1.5rem;
-    }
     
-    .carousel-portfolio-item {
-        height: calc(100vh - 175px) !important;
-    }
     .thankyou h2 {
         margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1050px) {
+    .masthead-full{
+        height: 65rem;
     }
 }
 
@@ -283,7 +307,7 @@
         margin: 0 auto;
     }
     .masthead-full{
-        height: 55rem;
+        height: 57rem;
     }
     /* .masthead .masthead-logo {
        min-height: 25rem;
@@ -293,14 +317,12 @@
         width: 85%;
         margin: 3rem auto;
     }
-    .carousel-portfolio-item {
-        height: calc(100vh - 100px) !important;
-    }
+    
 }
 
 @media (min-width: 1680px) {
     .masthead-full{
-        height: 57rem;
+        height: 63rem;
     }
     .masthead .masthead-logo {
        min-height: 40rem;
@@ -309,7 +331,7 @@
     }
     .embed-responsive{
         width: 100%;
-        margin: 0 auto;
+        margin: 3.25rem auto;
     }
 }
 
