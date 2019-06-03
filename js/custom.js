@@ -39,6 +39,14 @@ $(function () {
                 <p>Christopher rounds out his distinguished experience with five official military deployments and one private deployment. His uniquely valuable areas of expertise include combat operations planning, intra-agency cooperation/training and electronics tracking/security.</p>
                 `)
                 break;
+            case 'adam-bio':
+                return (`<h5>Adam Chapman serves as Marketing & Communications Advisor</h5>
+                <p>Adam has over fifteen years of experience in sales, performance marketing and digital design.</p>
+                <p>He helps strategize, design and execute Liberty Dynamic's digital and social media missions around the world.</p>
+                <p>Adam appreciates the great risk and sacrifice his brother and friends experienced in their tactical operations and how the Liberty Dynamic flash-bang will greatly improve safety and tactical advantage in those situations.</p>
+                <p>Therefore, despite initial concerns about what could have been an entrenched market, he is proud of the intense interest and overwhelmingly positive response to the device from military, SWAT, DEA and other law enforcement teams around the world! </p>
+                `)
+                break;
         }
     };
 
