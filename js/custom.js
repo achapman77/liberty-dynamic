@@ -45,6 +45,9 @@ $(function () {
                 <p>He helps strategize, design and execute Liberty Dynamic's digital and social media missions around the world.</p>
                 <p>Adam appreciates the great risk and sacrifice his brother and friends experienced in their tactical operations and how the Liberty Dynamic flash-bang will greatly improve safety and tactical advantage in those situations.</p>
                 <p>Therefore, despite initial concerns about what could have been an entrenched market, he is proud of the intense interest and overwhelmingly positive response to the device from military, SWAT, DEA and other law enforcement teams around the world! </p>
+                <a class="mx-1" href="https://www.linkedin.com/in/adamachapman/">
+                <i class="fab fa-linkedin fa-fw fa-2x"></i>
+                </a>`);
                 `)
                 break;
         }
