@@ -48,7 +48,6 @@ $(function () {
                 <a class="mx-1" href="https://www.linkedin.com/in/adamachapman/">
                 <i class="fab fa-linkedin fa-fw fa-2x"></i>
                 </a>`);
-                `)
                 break;
         }
     };
