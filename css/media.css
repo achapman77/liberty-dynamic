@@ -40,14 +40,23 @@
     width: 48%; 
 }
 
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 7rem;
+    margin: 0;
+    padding: 0.25rem;
+}
+
 .grid-item img {
-    display: block;
+    display: inline-block;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 7rem;
     margin: auto;
 }
 
-.grid-item:hover {
+.grid-item img:hover {
     /* border: 1px solid black; */
     transform: scale(1.1); 
     /* background-color: rgba(237, 71, 53, 0.335); */
