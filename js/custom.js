@@ -33,17 +33,11 @@ $(function () {
                 <p>An experienced and knowledgeable operator, Jarrett has advanced through numerous tactical entry schools. His eight years of rigorous service on tactical entry teams has provided him with the aptitude to provide cutting edge techniques and situational experience for Liberty’s product development.</p>
                 `)
                 break;
-            case 'christopher-bio':
-                return (`<h5>Christopher Ward serves as a key Tactics and Training Subject Matter Expert</h5>
-                <p>Christopher is a skillful operator with five years of experience in the 1/75 Ranger Regiment, USASOC/JSOC as MOS 11V and two years specializing in Reconnaissance Surveillance and Target Acquisition.</p>
-                <p>Christopher rounds out his distinguished experience with five official military deployments and one private deployment. His uniquely valuable areas of expertise include combat operations planning, intra-agency cooperation/training and electronics tracking/security.</p>
-                `)
-                break;
             case 'adam-bio':
                 return (`<h5>Adam Chapman serves as Marketing & Communications Advisor</h5>
                 <p>Adam has over fifteen years of experience in sales, marketing and digital design.</p>
                 <p>He helps strategize and execute Liberty Dynamic's digital and social media missions around the world.</p>
-                <p>Adam appreciates the great risk and sacrifice his brother and friends experienced in their tactical operations and how the Liberty Dynamic flash-bang will greatly improve safety and tactical advantage.</p>
+                <p>Adam appreciates the great risk and sacrifice his brother and friends experienced in their operations and how the Liberty Dynamic flash-bang will greatly improve safety and tactical advantage.</p>
                 <p>Liberty Dynamic is disrupting an entrenched market in a relatively short period of time and he is proud of the intense interest and demand for the device from military, SWAT, DEA and other law enforcement teams around the world. </p>
                 <a class="mx-1" href="https://www.linkedin.com/in/adamachapman/">
                 <i class="fab fa-linkedin fa-fw fa-2x"></i>
