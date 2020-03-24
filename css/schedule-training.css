@@ -1,0 +1,48 @@
+#schedule-training {
+    color: white;
+    height: 1260px;
+}
+.schedule-title {
+    margin-top: 3rem;
+    max-width: 80%;
+}
+
+.training-content {
+    justify-content: center;
+}
+.content-box {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    align-items: top;
+}
+.content-box i {
+    font-size: 55px;
+}
+.list-box {
+    display: grid;
+}
+
+.list-box.left {
+    grid-template-columns: 20% 40% 40%;
+}
+.list-box.right {
+    grid-template-columns: 20% 80%;
+}
+
+.list-box ul {
+    margin-left: 15px;
+}
+.list-box li {
+    text-align: left;
+}
+
+.note-additional {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.calendly-inline-widget {
+    height: 647px;
+}
+
