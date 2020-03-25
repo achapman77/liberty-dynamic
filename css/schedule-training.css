@@ -8,10 +8,12 @@
     } 
 }
 .schedule-title {
-    margin-top: 3rem;
-    max-width: 80%;
+    margin: 3rem auto 1rem auto;
+    max-width: 100%;
 }
-
+.nowrap {
+    white-space: nowrap;
+}
 .training-content {
     justify-content: center;
 }
@@ -22,6 +24,11 @@
 }
 .content-box i {
     font-size: 55px;
+}
+@media screen and (max-width: 992px ) {
+    .content-box {
+        grid-template-columns: 30% 70%;
+    } 
 }
 @media screen and (max-width: 768px ) {
     .content-box.right {
@@ -35,8 +42,18 @@
 .list-box.left {
     grid-template-columns: 20% 40% 40%;
 }
+@media screen and (max-width: 992px ) {
+    .list-box.left {
+        grid-template-columns: 30% 35% 35%;
+    }
+}
 .list-box.right {
     grid-template-columns: 20% 80%;
+}
+@media screen and (max-width: 992px ) {
+    .list-box.right {
+        grid-template-columns: 30% 70%;
+    } 
 }
 
 .list-box ul {
