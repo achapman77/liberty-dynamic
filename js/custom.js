@@ -17,16 +17,6 @@ $(function () {
                 <i class="fab fa-linkedin fa-fw fa-2x"></i>
                 </a>`);
                 break;
-            case `marc-bio`:
-                return (`<h5>Marc Caldwell serves as Co-Founder and Chief Technology Officer</h5>
-                <p>Marc has over 30 years of experience in new product development and innovation.</p> 
-                <p>He holds a Bachelors of Science in Mechanical Engineering, a Masters of Science in Chemical Engineering and has been awarded 8 US patents for his innovative work.</p>
-
-                <p>Serving with distinction as the Director of Engineering for Combat Training Solutions; Marc is a trusted supplier of military training hardware and IED simulations. For twenty-five years Marc has owned and operated his own product development and manufacturing firm, developing world class technologies.</p> 
-                <a class="mx-1" href="https://www.linkedin.com/in/marcus-caldwell-3b33427/">
-                <i class="fab fa-linkedin fa-fw fa-2x"></i>
-                </a>`);
-                break;
             case 'jarrett-bio':
                 return (`<h5>Jarrett Hill serves as a key Tactics and Training Subject Matter Expert</h5>
                 <p>With over twenty-years of tactical experience, Jarrett has served in the Marine infantry, as a respected federal agent, and in the private military sector.</p>
