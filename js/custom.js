@@ -17,6 +17,10 @@ $(function () {
                 <i class="fab fa-linkedin fa-fw fa-2x"></i>
                 </a>`);
                 break;
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 99de057acff5c789c054244d2eba9967ddeef10a
             case 'jarrett-bio':
                 return (`<h5>Jarrett Hill serves as a key Tactics and Training Subject Matter Expert</h5>
                 <p>With over twenty-years of tactical experience, Jarrett has served in the Marine infantry, as a respected federal agent, and in the private military sector.</p>
