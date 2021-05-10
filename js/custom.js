@@ -2,6 +2,21 @@ $(function () {
     
     
     $("#bio-container").hide();
+    
+    //Move past events
+    setTimeout(function(){
+        $.each($('#upcoming_events li'), function(i,v){
+            let eventDate = new Date($(v).attr('data-date'));
+            
+            let today = new Date();
+            console.info(today)
+            console.info(eventDate < today)
+            if (eventDate < today) {
+                $(v).appendTo('#past_events')
+            }
+        });
+    },500)
+    
 
     
     // Team Bio Click Event ======================================
@@ -17,10 +32,6 @@ $(function () {
                 <i class="fab fa-linkedin fa-fw fa-2x"></i>
                 </a>`);
                 break;
-<<<<<<< HEAD
-=======
-            
->>>>>>> 99de057acff5c789c054244d2eba9967ddeef10a
             case 'jarrett-bio':
                 return (`<h5>Jarrett Hill serves as a key Tactics and Training Subject Matter Expert</h5>
                 <p>With over twenty-years of tactical experience, Jarrett has served in the Marine infantry, as a respected federal agent, and in the private military sector.</p>
@@ -83,6 +94,23 @@ $(function () {
         $grid.masonry('layout');
     });
 
+    $(document).on('click','.btn_show_past_events', function(e){
+  
+        //Hide Past Events
+        if ($(this).hasClass('active')){
+            $(this).find('span').html('Show Past Events')
+            $(this).removeClass('active')
+            $('#past_events').hide();
+            $(this).find('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down')
+        } 
+        // Show Past Events
+        else {
+            $(this).find('span').html('Hide Past Events');
+            $(this).addClass('active');
+            $('#past_events').show();
+            $(this).find('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up')
+        }
+    });
 
 
 });

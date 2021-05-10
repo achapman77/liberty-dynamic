@@ -66,3 +66,11 @@
 .events .card-body .mx-top-1 {
     margin-top: 0.75em;
 }
+
+.events .btn-container {
+    margin: 1em 0;
+}
+
+.events .btn_show_past_events {
+    width: 200px;
+}
