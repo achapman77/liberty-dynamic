@@ -75,8 +75,25 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.39);
 
 .events .btn-container {
     margin: 1em 0;
+    padding: 0.5em 0;
+}
+.events .btn-container.active {
+    background: darkgray;
 }
 
 .events .btn_show_past_events {
-    width: 200px;
+    width: 225px;
+    padding: 5px 0;
+}
+
+.events .btn_show_past_events i {
+    margin-right: 5px;
+}
+
+.events .btn_show_past_events.active {
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
 }

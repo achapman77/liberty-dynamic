@@ -138,27 +138,27 @@ $(function () {
         let b = ``;
         
             b += `<li data-date="${v.date}">`;
-                    b += `<div class="card ${today < eventDate ? '' : 'compact'}">`;
-                        b += `<div class="card-header">`; 
-                            b += `<span>`;
-                                b += `<i class="fas fa-calendar-alt" title="date"></i>: <div>${v.date_long}</div>`;
-                            b += `</span>`;
-                            b += `<span>`;
-                                b += `<i class="fas fa-map-marker-alt" title="location"></i>: <div>${v.location}</div>`;
-                            b += `</span>`;
-                        b += `</div>`;
-                        b += `<div class="card-body">`;
-                            b += `<div class="label">HOST:</div>`;
-                            b += `<div>${v.host}</div>`;
-                            if (today < eventDate) {
-                                b += `<div class="label mx-top-1">DESCRIPTION:</div>`;
-                                b += `<div>${v.description ? v.description : 'Liberty Dynamic Instructor Course'}</div>`;
-                                b += `<div class="label mx-top-1">CONTACT:</div>`;
-                                b += `<div><a href="${v.register_link ? v.register_link : 'mailto:training@libertydynamic.com'}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
-                            }
-                        b += `</div>`;
+                b += `<div class="card ${today < eventDate ? '' : 'compact'}">`;
+                    b += `<div class="card-header">`; 
+                        b += `<span>`;
+                            b += `<i class="fas fa-calendar-alt" title="date"></i>: <div>${v.date_long}</div>`;
+                        b += `</span>`;
+                        b += `<span>`;
+                            b += `<i class="fas fa-map-marker-alt" title="location"></i>: <div>${v.location}</div>`;
+                        b += `</span>`;
                     b += `</div>`;
-                b += `</li>`;
+                    b += `<div class="card-body">`;
+                        b += `<div class="label">HOST:</div>`;
+                        b += `<div>${v.host}</div>`;
+                        if (today < eventDate) {
+                            b += `<div class="label mx-top-1">DESCRIPTION:</div>`;
+                            b += `<div>${v.description ? v.description : 'Liberty Dynamic Instructor Course'}</div>`;
+                            b += `<div class="label mx-top-1">CONTACT:</div>`;
+                            b += `<div><a href="${v.register_link ? v.register_link : 'mailto:training@libertydynamic.com'}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
+                        }
+                    b += `</div>`;
+                b += `</div>`;
+            b += `</li>`;
                 
         
                 if (today < eventDate) {
