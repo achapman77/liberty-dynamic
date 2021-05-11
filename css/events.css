@@ -34,6 +34,10 @@
     height: 250px;
 }
 
+.events .card.compact {
+    height: 140px;
+}
+
 .events .card-header {
     display: flex;
     justify-content: space-between;

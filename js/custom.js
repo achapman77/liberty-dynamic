@@ -1,21 +1,60 @@
+import {events} from './events.js'
 $(function () { 
     
     
     $("#bio-container").hide();
+    console.info(events);
+    $.each(events, function(i,v){
+        let eventDate = new Date(v.date);
+        let today = new Date();
+        let b = ``;
+        
+            b += `<li data-date="${v.date}">`;
+                    b += `<div class="card ${today < eventDate ? '' : 'compact'}">`;
+                        b += `<div class="card-header">`; 
+                            b += `<span>`;
+                                b += `<i class="fas fa-calendar-alt" title="date"></i>: <div>${v.date_long}</div>`;
+                            b += `</span>`;
+                            b += `<span>`;
+                                b += `<i class="fas fa-map-marker-alt" title="location"></i>: <div>${v.location}</div>`;
+                            b += `</span>`;
+                        b += `</div>`;
+                        b += `<div class="card-body">`;
+                            b += `<div class="label">HOST:</div>`;
+                            b += `<div>${v.host}</div>`;
+                            if (today < eventDate) {
+                                b += `<div class="label mx-top-1">DESCRIPTION:</div>`;
+                                b += `<div>${v.description ? v.description : 'Liberty Dynamic Instructor Course'}</div>`;
+                                b += `<div class="label mx-top-1">CONTACT:</div>`;
+                                b += `<div><a href="${v.register_link ? v.register_link : 'mailto:training@libertydynamic.com'}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
+                            }
+                        b += `</div>`;
+                    b += `</div>`;
+                b += `</li>`;
+                console.info(b)
+        
+                if (today < eventDate) {
+                    $('#upcoming_events').append(b);
+                } else {
+                    $('#past_events').append(b);
+                }                  
+    });
     
     //Move past events
-    setTimeout(function(){
-        $.each($('#upcoming_events li'), function(i,v){
-            let eventDate = new Date($(v).attr('data-date'));
+    // setTimeout(function(){
+    //     $.each($('#upcoming_events li'), function(i,v){
+    //         let eventDate = new Date($(v).attr('data-date'));
             
-            let today = new Date();
-            console.info(today)
-            console.info(eventDate < today)
-            if (eventDate < today) {
-                $(v).appendTo('#past_events')
-            }
-        });
-    },500)
+    //         let today = new Date();
+    //         // console.info(today)
+    //         // console.info(eventDate < today)
+    //         if (eventDate < today) {
+    //             $(v).appendTo('#past_events')
+    //             $(v).find('.noshow').remove();
+    //             $(v).find('.card').addClass('compact');
+    //         }
+    //     });
+    // },500)
     
 
     
