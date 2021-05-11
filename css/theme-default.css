@@ -9922,25 +9922,25 @@ hr.small {
   left: 0;
 }
 
-.carousel-portfolio .first-item {
+/* .carousel-portfolio .first-item {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio/carousel/item-1-bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/portfolio/carousel/item-1-bg.jpg");
-}
+} */
 
-.carousel-portfolio .second-item {
+/* .carousel-portfolio .second-item {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio/carousel/item-2-bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/portfolio/carousel/item-2-bg.jpg");
-}
+} */
 
-.carousel-portfolio .third-item {
+/* .carousel-portfolio .third-item {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio/carousel/item-3-bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/portfolio/carousel/item-3-bg.jpg");
-}
+} */
 
-.carousel-portfolio .fourth-item {
+/* .carousel-portfolio .fourth-item {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../img/portfolio/carousel/item-4-bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/portfolio/carousel/item-4-bg.jpg");
-}
+} */
 
 @media (min-width: 768px) {
   .carousel-portfolio .carousel-portfolio-item {
