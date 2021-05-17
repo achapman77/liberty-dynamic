@@ -75,7 +75,7 @@ $(function () {
             date: '2021-04-28',
             date_long: 'April 28, 2021',
             location: 'Little Rock, AR',
-            host: 'Direct Action Resource Center'
+            host: 'DARC - Direct Action Resource Center'
         },
         {
             date: '2021-04-27',
@@ -86,12 +86,27 @@ $(function () {
             register_text: 'ISOA Website'
         },
         {
+            date: '2021-05-17',
+            date_long: 'May 17, 2021',
+            location: ' Lawrenceville, GA',
+            host: "Gwinnett County Police Department",
+            
+        },
+        {
             date: '2021-06-07',
             date_long: 'June 7-10, 2021',
             location: 'Sandusky, OH',
             host: "OTOA - OHIO TACTICAL OFFICER ASSOCIATION CONFERENCE",
             register_link: "https://www.otoa.org/",
             register_text: 'OTOA Website'
+        },
+        {
+            date: '2021-06-09',
+            date_long: 'June 9, 2021',
+            location: 'Muncie, IN',
+            host: "MTAC - Firearms | Tactical | Medical Training",
+            register_link: "https://www.mtactraining.com/law-enforcement",
+            register_text: 'MTACTraining.com'
         },
         {
             date: '2021-06-30',
@@ -102,12 +117,26 @@ $(function () {
             register_text: 'NCTOA Website'
         },
         {
+            date: '2021-07-20',
+            date_long: 'July 20, 2021',
+            location: 'Muncie, IN',
+            host: "MTAC - Firearms | Tactical | Medical Training",
+            register_link: "https://www.mtactraining.com/law-enforcement",
+            register_text: 'MTACTraining.com'
+        },
+        {
             date: '2021-07-21',
             date_long: 'July 21 - 22, 2021',
             location: 'Nashville, TN',
             host: "TACOPS",
             register_link: "https://www.cvent.com/events/2021-tacops-south-tactical-training-conference-expo/registration-92fdc27c385c4811a1fa9d3ba9ecaeb9.aspx?fqp=true",
             register_text: 'TACOPS Website'
+        },
+        {
+            date: '2021-07-21',
+            date_long: 'July 21, 2021',
+            location: 'Alliance, OH',
+            host: "Alliance Police Training",
         },
         {
             date: '2021-08-09',
@@ -153,7 +182,7 @@ $(function () {
                         if (today < eventDate) {
                             b += `<div class="label mx-top-1">DESCRIPTION:</div>`;
                             b += `<div>${v.description ? v.description : 'Liberty Dynamic Instructor Course'}</div>`;
-                            b += `<div class="label mx-top-1">CONTACT:</div>`;
+                            b += `<div class="label mx-top-1">REGISTER:</div>`;
                             b += `<div><a href="${v.register_link ? v.register_link : 'mailto:training@libertydynamic.com'}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
                         }
                     b += `</div>`;
@@ -166,5 +195,27 @@ $(function () {
                 } else {
                     $('#past_events').append(b);
                 }                  
+    });
+
+    $(document).on('click','.btn_show_past_events', function(e){
+  
+        //Hide Past Events
+        if ($(this).hasClass('active')){
+            $(this).find('span').html('Show Past Events')
+            $(this).removeClass('active')
+            $('#past_events').hide();
+            $(this).find('i').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
+            $(this).closest('.btn-container').removeClass('active');
+            $(this).removeClass('active');
+        } 
+        // Show Past Events
+        else {
+            $(this).find('span').html('Hide Past Events');
+            $(this).addClass('active');
+            $('#past_events').show();
+            $(this).find('i').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
+            $(this).closest('.btn-container').addClass('active');
+            $(this).addClass('active');
+        }
     });
 })
