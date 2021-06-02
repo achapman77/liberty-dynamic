@@ -133,8 +133,8 @@ $(function () {
             register_text: 'TACOPS Website'
         },
         {
-            date: '2021-07-21',
-            date_long: 'July 21, 2021',
+            date: '2021-07-27',
+            date_long: 'July 27, 2021',
             location: 'Alliance, OH',
             host: "Alliance Police Training",
         },
@@ -154,11 +154,19 @@ $(function () {
         },
         {
             date: '2021-08-20',
-            date_long: 'August 20, 2021',
+            date_long: 'August 25, 2021',
             location: 'Verona, NY',
             host: "TACOPS",
             register_link: "https://www.cvent.com/events/2021-nytoa-s-w-a-t-tactical-training-conference-expo/registration-30b0abd418764bdf8cba3a479fb997e3.aspx?fqp=true",
             register_text: 'TACOPS Website'
+        },
+        {
+            date: '2021-09-28',
+            date_long: 'September 28, 2021',
+            location: 'Brookfield, WI',
+            host: "Wisconsin Tactical Association",
+            register_link: "https://www.aspwi.org/",
+            register_text: 'WI Tactical Assoc Website'
         },
     ]
     $.each(events, function(i,v){
