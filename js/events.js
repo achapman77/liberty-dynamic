@@ -139,6 +139,12 @@ $(function () {
             host: "Alliance Police Training",
         },
         {
+            date: '2021-08-06',
+            date_long: 'August 6, 2021',
+            location: 'Kansas City, Kansas',
+            host: "KCPDMO - Kansas City Missouri Police Department",
+        },
+        {
             date: '2021-08-09',
             date_long: 'August 9, 2021',
             location: 'Joliet, IL',
