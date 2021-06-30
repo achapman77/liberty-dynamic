@@ -117,6 +117,12 @@ $(function () {
             register_text: 'NCTOA Website'
         },
         {
+            date: '2021-07-13',
+            date_long: 'July 13, 2021',
+            location: 'Victoria, TX',
+            host: "Victoria Police Department",
+        },
+        {
             date: '2021-07-20',
             date_long: 'July 20, 2021',
             location: 'Muncie, IN',
