@@ -4,12 +4,12 @@
     <loc>https://www.libertydynamic.com/</loc>
     <lastmod>2021-07-20</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://www.libertydynamic.com/training</loc>
     <lastmod>2021-07-20</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 </urlset>
