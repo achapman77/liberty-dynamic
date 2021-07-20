@@ -23,7 +23,26 @@
  
    <!---Canonical-->
    <link rel="canonical" href="https://www.libertydynamic.com/">
-  
+    
+   <!---Content Security-->
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 
+   'self' 
+   player.vimeo.com 
+   use.fontawesome.com 
+   fonts.googleapis.com 
+   code.jquery.com 
+   ajax.googleapis.com 
+   googletagmanager.com 
+   fonts.gstatic.com
+   assets.calendly.com
+   unpkg.com
+   cdn.optimizely.com
+   notifier-configs.airbrake.io
+   google-analytics.com
+   js-agent.newrelic.com
+   "> -->
+
+
   <!--favicon-->
   <link rel="apple-touch-icon" sizes="57x57" href="img/icons/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicons/apple-icon-60x60.png">
@@ -98,7 +117,7 @@
                   <a class="dropdown-item js-scroll-trigger" href="#about">The Problem</a>
                   <a class="dropdown-item js-scroll-trigger" href="#product">The Solution</a>
                   <a class="dropdown-item js-scroll-trigger" href="#use-cases">Use Cases</a>
-                  <a class="dropdown-item js-scroll-trigger" href="/downloads/Liberty-Dynamic-Noise-Flash-Diversionary-Device-NFDD-Flashbang-Tech-Profile.pdf">Product Sheet</a>
+                  <!-- <a class="dropdown-item js-scroll-trigger" href="/downloads/Liberty-Dynamic-Noise-Flash-Diversionary-Device-NFDD-Flashbang-Tech-Profile.pdf" target="_blank">Product Sheet</a> -->
                   <!-- <a class="dropdown-item js-scroll-trigger" href="#video-carousel">Video Footage</a>
                   <a class="dropdown-item js-scroll-trigger" href="#media">Media Coverage</a> -->
                   </div>
@@ -287,7 +306,7 @@
   <section class="page-section text-center" id="use-cases" data-nosnippet="true">
     <div class="container-fluid">
       <!-- <h2 class="page-section-heading text-uppercase text-center">Adaptable</h2> -->
-      <h1 class="page-section-heading text-uppercase text-center"><span class="text-primary">EASY ADOPTION</span> & <span class="text-primary">NEW OPPORTUNITIES</span> </h1>
+      <h3 class="page-section-heading text-uppercase text-center">EASY ADOPTION & NEW OPPORTUNITIES</h3>
       <h4 class="text-uppercase text-center">for use across ALL LAW ENFORCEMENT & MILITARY TEAMS.</h4>
       <hr class="primary small mb-5">
       <div class="row">
@@ -436,7 +455,7 @@
                 <div class="col-lg-8 col-xl-8">
                   <div class="video-container mb-3 mb-lg-0">
                         <!-- Carousel Image -->
-                        <div style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="carousel_img_container">
                           <iframe src="https://player.vimeo.com/video/319978565" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                   </div>
@@ -463,7 +482,7 @@
                 <div class="col-lg-6 col-xl-8">
                   <div class="video-container mb-3 mb-lg-0">
                         <!-- Carousel Image -->
-                        <div style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="carousel_img_container">
                             <iframe src="https://player.vimeo.com/video/322160759" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                         <!-- <img class="img-fluid" src="img/portfolio/carousel/item-1-img.jpg" alt=""> -->
@@ -491,7 +510,7 @@
                 <div class="col-lg-6 col-xl-8">
                   <div class="video-container mb-3 mb-lg-0">
                     <!-- Carousel Image -->
-                    <div style="padding:56.25% 0 0 0;position:relative;">
+                    <div class="carousel_img_container">
                         <iframe src="https://player.vimeo.com/video/322160673" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                   </div>
@@ -515,7 +534,7 @@
                 <div class="col-lg-6 col-xl-8">
                     <div class="video-container mb-3 mb-lg-0">
                       <!-- Carousel Image -->
-                      <div style="padding:56.25% 0 0 0;position:relative;">
+                      <div class="carousel_img_container">
                           <iframe src="https://player.vimeo.com/video/319978579" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                       </div>
                     </div>
@@ -539,7 +558,7 @@
                 <div class="col-lg-6 col-xl-8">
                   <div class="video-container mb-3 mb-lg-0">
                     <!-- Carousel Image -->
-                    <div style="padding:56.25% 0 0 0;position:relative;">
+                    <div class="carousel_img_container">
                         <iframe src="https://player.vimeo.com/video/322166796" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                   </div>
@@ -566,7 +585,7 @@
   <!-- ======================================= -->
   <section class="page-section" id="media">
     <div class="container-fluid">
-      <h1 class="page-section-heading text-center text-uppercase">Media Coverage</h1>
+      <h3 class="page-section-heading text-center text-uppercase">Media Coverage</h3>
       <hr class="primary medium mb-6">
   
       <div class="row">
@@ -673,7 +692,7 @@
                       <span>Show Past Events</span>
                   </button>
               </div>
-              <div class="row card-container" id="past_events" style="display: none;">
+              <div class="row card-container hidden" id="past_events">
                   <!-- Insert Past Events -->
               </div>
           </ul>
@@ -708,8 +727,8 @@
                       </div>
                   </div>
                   <div id="mce-responses">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
+                      <div class="response" id="mce-error-response" style="display: none;"></div>
+                      <div class="response" id="mce-success-response" style="display: none;"></div>
                   </div>
                   </form>
                   
@@ -731,7 +750,7 @@
           <!-- <p class="lead m-0 text-center">Let us know about your next project and we will let you know what we can do to help you!</p> -->
           <hr class="primary mb-5">
           <form name="contactForm" id="contactForm" action="/thankyou" netlify data-netlify="true" netlify-honeypot="bot-field">
-              <div style="display:none;">
+              <div class="hidden">
               <input name="bot-field">
               </div>
               <div class="row control-group">

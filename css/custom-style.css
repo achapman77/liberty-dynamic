@@ -402,8 +402,13 @@
     max-width: 80rem;
 }
 
+.carousel_img_container {
+    padding:56.25% 0 0 0;
+    position:relative;
+}
 
-
-
+.hidden {
+    display: none;
+}
 
 
