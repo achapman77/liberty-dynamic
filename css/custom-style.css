@@ -412,3 +412,24 @@
 }
 
 
+body {
+    overflow-x:hidden;
+}
+
+.contact_phone {
+    align-items: center;
+}
+.contact_phone h5 {
+    margin: 0;
+}
+.contact_phone a {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.footer .footer-social {
+    padding: 3rem 0;
+}
+.footer {
+    padding-top: 1rem;
+}
