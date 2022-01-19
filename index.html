@@ -162,6 +162,7 @@
 
     <!--Custom CSS-->
     <link href="css/custom-style.css" rel="stylesheet" />
+    <link href="css/hero-section.css" rel="stylesheet" />
     <link href="css/video-section.css" rel="stylesheet" />
     <link href="css/team-section.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
@@ -292,7 +293,7 @@
             <!-- <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/downloads/LibertyDynamic_172EDD_Tech Profile.pdf" target="_blank">Cut Sheet</a>
               </li> -->
-            <li class="nav-item">
+            <li class="nav-item" id="trainingEvents">
               <a class="nav-link js-scroll-trigger" href="#events"
                 >Training Events</a
               >
@@ -310,47 +311,26 @@
       </div>
     </nav>
 
-    <header class="masthead masthead-full text-white" id="landing">
-      <div class="lander container pxt-3">
-        <div class="row align-items-center">
-          <div class="col text-center">
-            <!-- <img class="masthead-logo mb-4 img-fluid" src="img/flashbang-imgs/fb-angle.png" alt="Liberty Dynamic"> -->
-            <div></div>
-            <div
-              class="embed-responsive embed-responsive-16by9 align-items-center"
-            >
-              <iframe
-                src="https://player.vimeo.com/video/319978547"
-                class="embed-responsive-item"
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-              ></iframe>
-              <!-- <iframe src="https://player.vimeo.com/video/319978547?color=ED4635&title=0&byline=0&portrait=0" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-              <!-- <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/319978547?color=ED4635&title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen >
-                  </iframe> -->
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-
-            <h1 class="text-uppercase mt-4">
-              The Safer & Smarter <br />
-              Tactical Flashbang
-            </h1>
-            <hr class="primary medium" />
-            <div class="masthead-subtitle">
-              Superior Safety | Superior Function | Superior Efficiency
-            </div>
-          </div>
-        </div>
-
-        <div class="masthead-scroll">
-          <a href="#about" class="masthead-scroll-btn js-scroll-trigger">
-            <i class="fas fa-angle-down"></i>
-          </a>
-        </div>
-      </div>
+    <header id="hero">
+      <video playsinline autoplay muted loop poster="../videos/LD_video_thumbnail.jpg" id="bgvideo" width="x" height="y">
+      <source src="../videos/Liberty_Dynamic_Reload_Mechanics.mp4" type="video/mp4"> 
+      </video>
     </header>
+    <section class="page-section text-center" id="tagline" data-nosnippet>
+      <div class="tagline-container">
+        <h2 class="page-section-heading text-uppercase">The Safer & Smarter Tactical Flashbang</h2>
+        <h4 class="text-uppercase text-center">
+          <span class="label">Superior <span>Saftey</span></span>
+          <span class="vbar">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+          <span class="label">Superior <span>Function</span></span>
+          <span class="vbar">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+          <span class="label">Superior <span>Efficiency</span></span>
+          <!-- <hr class="primary" /> -->
+      </div>
+      
+    </section>
+
+    
 
     <!-- ======================================= -->
     <!-- ABOUT -->
@@ -359,7 +339,7 @@
     <section class="page-section text-center" id="about" data-nosnippet>
       <div class="container-fluid">
         <h2 class="page-section-heading text-uppercase">
-          Existing Flashbangs Are <br />Dangerous & Costly
+          Old Flashbangs Are Dangerous & Costly
         </h2>
         <hr class="primary small mb-6" />
         <div class="row">
@@ -1252,41 +1232,7 @@
       </div>
     </section>
 
-    <!-- ======================================= -->
-    <!-- TRAINING EVENTS -->
-    <!-- ======================================= -->
-    <section id="events" class="bg-light">
-      <!--Insert events.html-->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-xl-8 mx-auto">
-            <h2 class="page-section-heading text-uppercase text-center">
-              Upcoming Training Events
-            </h2>
-            <hr class="primary medium mb-5" />
-          </div>
-        </div>
-      </div>
-      <div class="row events">
-        <div class="col-lg-12 mx-auto">
-          <ul>
-            <div id="upcoming_events" class="row card-container">
-              <!-- Insert new events     -->
-            </div>
-            <!-- End card card-container -->
-            <div class="row card-container btn-container">
-              <button class="btn_show_past_events">
-                <i class="fas fa-angle-double-down"></i>
-                <span>Show Past Events</span>
-              </button>
-            </div>
-            <div class="row card-container hidden" id="past_events">
-              <!-- Insert Past Events -->
-            </div>
-          </ul>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- ======================================= -->
     <!-- SUBSCRIBE -->
@@ -1501,6 +1447,42 @@
     </section>
 
     <!-- ======================================= -->
+    <!-- TRAINING EVENTS -->
+    <!-- ======================================= -->
+    <section id="events" class="bg-light">
+      <!--Insert events.html-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-xl-8 mx-auto">
+            <h2 class="page-section-heading text-uppercase text-center">
+              Upcoming Training Events
+            </h2>
+            <hr class="primary medium mb-5" />
+          </div>
+        </div>
+      </div>
+      <div class="row events">
+        <div class="col-lg-12 mx-auto">
+          <ul>
+            <div id="upcoming_events" class="row card-container">
+              <!-- Insert new events     -->
+            </div>
+            <!-- End card card-container -->
+            <div class="row card-container btn-container">
+              <button class="btn_show_past_events">
+                <i class="fas fa-angle-double-down"></i>
+                <span>Show Past Events</span>
+              </button>
+            </div>
+            <div class="row card-container hidden" id="past_events">
+              <!-- Insert Past Events -->
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================= -->
     <!-- FOOTER -->
     <!-- ======================================= -->
     <footer id="footer" class="footer text-center text-white-50">
@@ -1535,6 +1517,7 @@
           </div>
         </div>
         <div class="footer-social">
+          <div class="flexInner">
           <!-- Footer Social Link - LinkedIn -->
           <a
             class="px-3 text-white-50"
@@ -1549,6 +1532,8 @@
           >
             <i class="fab fa-facebook-f fa-2x fa-fw"></i>
           </a>
+          </div>
+          <div class="flexInner">
           <!-- Footer Social Link - Instagram -->
           <a
             class="px-3 text-white-50"
@@ -1560,6 +1545,7 @@
           <a class="px-3 text-white-50" href="https://vimeo.com/libertydynamic">
             <i class="fab fa-vimeo fa-2x fa-fw"></i>
           </a>
+          </div>
         </div>
         <div class="footer-copyright">
           <!-- <a class="text-white-50" href="https://www.steeplinedesign.com">Website by Steep Line Design</a> -->

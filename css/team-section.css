@@ -150,10 +150,22 @@ p {
 .team-card .img-fluid {
   height: clamp(360px, 17vw, 410px);
   width: -webkit-fill-available;
+  filter: contrast(0.8) grayscale(1);
+  transition: transform 1.5s;
 }
+
+.team-card:hover {
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.team-card:hover .img-fluid {
+  filter: contrast(0.8) grayscale(0);
+  transform: scale(1.02);
+}
+
 .team-card hr {
   width: 175px;
-  transition: width 1s;
+  transition: width 0.35s;
 }
 .team-card:hover hr {
   width: clamp(300px, 15vw, 350px);
