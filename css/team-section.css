@@ -147,7 +147,7 @@ p {
 .label-container .h4 {
   font-size: clamp(1rem, 10vw, 1.35rem) !important;
 }
-.img-fluid {
+.team-card .img-fluid {
   height: clamp(360px, 17vw, 410px);
   width: -webkit-fill-available;
 }
