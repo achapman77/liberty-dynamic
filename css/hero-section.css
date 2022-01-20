@@ -203,3 +203,23 @@ section#tagline {
   flex-wrap: wrap;
   row-gap: 0.75rem;
 }
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#about .row {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 991px) {
+  #about .row {
+    margin-bottom: 2rem;
+  }
+  #about .px-md-5 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
