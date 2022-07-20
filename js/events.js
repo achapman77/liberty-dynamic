@@ -180,8 +180,80 @@ $(function () {
             register_link: "https://www.aspwi.org/",
             register_text: 'WI Tactical Assoc Website'
         },
+        {
+            date: '2022-07-20',
+            date_long: 'July 7, 2022',
+            location: 'Perry GA',
+            host: 'Guardian Center',
+            description: "DHS ICE ERO T&E Support",
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-08-08',
+            date_long: 'August 8, 2022',
+            location: 'Cincinnati, OH',
+            host: 'Golf Manor PD',
+            description: "Less Lethal Instructor Course",
+            register_link: "https://www.lesslethal.com/",
+            register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-08-12',
+            date_long: 'August 12, 2022',
+            location: 'Orange County, FL',
+            host: "Orange County Sheriff's Office",
+            description: "Less Lethal Instructor Course",
+            register_link: "https://www.lesslethal.com/",
+            register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-08-17',
+            date_long: 'August 17, 2022',
+            location: 'Toledo, OH',
+            host: "Toledo PD",
+            description: "Less Lethal Instructor Course",
+            register_link: "https://www.lesslethal.com/",
+            register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-08-24',
+            date_long: 'August 24, 2022',
+            location: 'Pittsburgh, PA',
+            host: "Pittsburgh PD",
+            description: "Less Lethal Instructor Course",
+            register_link: "https://www.lesslethal.com/",
+            register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-09-16',
+            date_long: 'September 16, 2022',
+            location: 'Moyock, NC',
+            host: "Moyock",
+            description: "Federal Law Enforcement Training",
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-09-16',
+            date_long: 'September 16, 2022',
+            location: 'Moyock, NC',
+            host: "Moyock",
+            description: "Federal Law Enforcement Training",
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
+        },
+        {
+            date: '2022-09-25',
+            date_long: 'September 25-30, 2022',
+            location: 'Millwaukee, WI',
+            host: "National Tactical Officer Association",
+            description: "Exhibitor, Demo & Training",
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
+        },
     ]
-    $.each(events, function(i,v){
+    $.each(events.reverse(), function(i,v){
         let eventDate = new Date(v.date);
         let today = new Date();
         let b = ``;
