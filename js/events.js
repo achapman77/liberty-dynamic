@@ -181,6 +181,15 @@ $(function () {
             register_text: 'WI Tactical Assoc Website'
         },
         {
+            date: "2022-06-06",
+            date_long: "June 6-10, 2022",
+            location: "Sandusky, OH",
+            host: "OTOA / Sandusky PD",
+            description: "Instructor Course", 
+            // register_link: "https://www.lesslethal.com/", 
+            // register_text: "LessLethal.com"
+        },
+        {
             date: '2022-07-20',
             date_long: 'July 7, 2022',
             location: 'Perry GA',
