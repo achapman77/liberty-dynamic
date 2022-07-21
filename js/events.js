@@ -244,15 +244,6 @@ $(function () {
             // register_text: 'LessLethal.com'
         },
         {
-            date: '2022-09-16',
-            date_long: 'September 16, 2022',
-            location: 'Moyock, NC',
-            host: "Moyock",
-            description: "Federal Law Enforcement Training",
-            // register_link: "https://www.lesslethal.com/",
-            // register_text: 'LessLethal.com'
-        },
-        {
             date: '2022-09-25',
             date_long: 'September 25-30, 2022',
             location: 'Millwaukee, WI',
@@ -284,7 +275,7 @@ $(function () {
                             b += `<div class="label mx-top-1">DESCRIPTION:</div>`;
                             b += `<div>${v.description ? v.description : 'Liberty Dynamic Instructor Course'}</div>`;
                             b += `<div class="label mx-top-1">REGISTER:</div>`;
-                            b += `<div><a href="${v.register_link ? v.register_link : 'mailto:training@libertydynamic.com'}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
+                            b += `<div><a href="${v.register_link ? v.register_link : `mailto: training@libertydynamic.com?subject=${v.host + "-" + v.date}`}" target="_blank">${v.register_text ? v.register_text : 'training@libertydynamic.com'}</a></div>`;
                         }
                     b += `</div>`;
                 b += `</div>`;
