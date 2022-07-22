@@ -204,8 +204,8 @@ $(function () {
             location: 'Cincinnati, OH',
             host: 'Golf Manor PD',
             description: "Less Lethal Instructor Course",
-            register_link: "https://www.lesslethal.com/",
-            register_text: 'LessLethal.com'
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
         },
         {
             date: '2022-08-12',
@@ -213,8 +213,8 @@ $(function () {
             location: 'Orange County, FL',
             host: "Orange County Sheriff's Office",
             description: "Less Lethal Instructor Course",
-            register_link: "https://www.lesslethal.com/",
-            register_text: 'LessLethal.com'
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
         },
         {
             date: '2022-08-17',
@@ -222,8 +222,8 @@ $(function () {
             location: 'Toledo, OH',
             host: "Toledo PD",
             description: "Less Lethal Instructor Course",
-            register_link: "https://www.lesslethal.com/",
-            register_text: 'LessLethal.com'
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
         },
         {
             date: '2022-08-24',
@@ -231,8 +231,8 @@ $(function () {
             location: 'Pittsburgh, PA',
             host: "Pittsburgh PD",
             description: "Less Lethal Instructor Course",
-            register_link: "https://www.lesslethal.com/",
-            register_text: 'LessLethal.com'
+            // register_link: "https://www.lesslethal.com/",
+            // register_text: 'LessLethal.com'
         },
         {
             date: '2022-09-16',
